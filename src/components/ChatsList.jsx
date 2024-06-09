@@ -2,7 +2,6 @@ import React from "react";
 import { ChatItem } from "./ChatItem";
 import "../App.css";
 import { CreateChat } from "./CreateChat";
-import { Users } from "./User";
 
 export const ChatsList = ({
   chatItemsProp,

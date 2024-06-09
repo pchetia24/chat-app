@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import "../App.css";
 
 export const MessageInput = ({ userId, setMessages, userMessages }) => {
-  //submit Message
-
   const [messageInput, setMessageInput] = useState(null);
 
   const onSubmit = (e) => {
     if (e.which === 13 && !e.shiftKey) {
+      // upon pressing enter key the message is submitted
       e.preventDefault();
 
       let mapCopy = new Map(userMessages);

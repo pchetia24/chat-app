@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { count } from "./User";
 
 export const CreateChat = ({ users, setUsers }) => {
   const [userName, setUserName] = useState(null);

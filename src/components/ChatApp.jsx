@@ -2,27 +2,22 @@ import React, { useState } from "react";
 import { ChatsList } from "./ChatsList";
 import { Chat } from "./Chat";
 import "../App.css";
-import { Users, userMap } from "./User";
+import { userMap } from "./User";
 
 export const ChatApp = () => {
-  //users pass in from here
-  //state of user to chats map
-  function makeMap(list) {
-    let map = new Map();
-    for (const id of list) {
-      map.set(id, [`Hi, my name is user ${id}`]);
-    }
-    return map;
-  }
-  // const [users, setUsers] = useState(userMap);
+  //component rendered by App
 
-  const [userMessages, setUserMessages] = useState(userMap);
-  const [currentUser, setCurrentUser] = useState(1);
+  const [userMessages, setUserMessages] = useState(userMap); //a map that stores userId -> user data along with messages
+  //sent/ received by each user. In a real time messaging server the list of messages can be represented as a map of
+  //conversationId -> messagesList, where a conversation Id is the id representing a conversation object with 2 or more users
+
+  //each chat's state can be represented as the state of all the user messages from the corresponding conversationId.
+
+  const [currentUser, setCurrentUser] = useState(1); // the user with who the chat is created
+
   const [currentUserMessages, setCurrentUserMessages] = useState(
     userMessages.get(currentUser).messages,
   );
-  console.log(currentUser);
-  console.log(userMessages.get(currentUser), "hi");
 
   return (
     <div className="chat-app-container">
