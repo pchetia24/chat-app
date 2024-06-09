@@ -22,13 +22,15 @@ Features left to implement:
 - delete chats
 - add timestamps to messages
 
-Design decisions and further improvements:
+Design decisions:
 
 ![chat-app](https://github.com/pchetia24/chat-app/assets/78832058/b8146003-78d0-40c2-99a7-fb7c0d9fad6d)
 
 - used react and js
 - used useState hook for maintaining app state
-  
+
+Futher TODOs and improvements:
+
 - I would write cypress tests if time permitted
 - I made the application responsive however I could 
 have added @media css tags for multiple screen dimensions
