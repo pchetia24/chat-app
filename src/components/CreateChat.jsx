@@ -15,11 +15,9 @@ export const CreateChat = ({ users, setUsers }) => {
       };
       mapCopy.set(newUser.id, newUser);
       setUsers(mapCopy);
+      setUserName("");
     }
   };
-
-  console.log(users, "users");
-
   return (
     <div>
       <input
