@@ -13,3 +13,23 @@ npm install
 npm run dev
 
 The application should open up on http://localhost:5173/
+
+Features built: 
+- create one or more chats with users
+- type, send and receive messages
+
+Features left to implement:
+- delete chats
+- add timestamps to messages
+
+Design decisions and further improvements:
+- used react and js
+- used useState hook for maintaining app state
+- I would write cypress tests if time permitted
+- I made the application responsive however I could 
+have added @media css tags for multiple screen dimensions
+- while enter on submit works for destop, laptop, it may be
+a better user experience to have a send button for mobile and ipad.
+- the scroll implementation on the chat component isn't working,
+  even though I set overflow: auto. If time permitted I would have debugged it.
+- would have made further improvements on css, html such as accessibility aria roles/ labels
