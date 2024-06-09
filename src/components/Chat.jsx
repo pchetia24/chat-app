@@ -12,7 +12,11 @@ export const Chat = ({
 }) => {
   return (
     <div className="chat-text-container">
-      {/* <div>{userMessages.get(userId).name}</div> */}
+      <div className="chat-user-bar">
+        <img className="user-profile-img" src={img} width="48" height="48" />
+
+        {userMessages.get(userId).name}
+      </div>
       <MessageList messages={currentUserMessages} img={img} />
       <MessageInput
         userId={userId}
