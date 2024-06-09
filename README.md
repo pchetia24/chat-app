@@ -23,6 +23,9 @@ Features left to implement:
 - add timestamps to messages
 
 Design decisions and further improvements:
+
+![chat-app](https://github.com/pchetia24/chat-app/assets/78832058/b8146003-78d0-40c2-99a7-fb7c0d9fad6d)
+
 - used react and js
 - used useState hook for maintaining app state
 - I would write cypress tests if time permitted
