@@ -26,6 +26,13 @@ Design decisions:
 
 ![chat-app](https://github.com/pchetia24/chat-app/assets/78832058/b8146003-78d0-40c2-99a7-fb7c0d9fad6d)
 
+
+
+https://github.com/pmoneysign/chat-app/assets/78832058/39419f51-0dfe-447d-b9cb-05e6004ec7c6
+
+
+
+
 - used react and js
 - used useState hook for maintaining app state
 
